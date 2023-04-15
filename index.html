@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Using FOIs to get data</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.reveal h1 {
+				text-transform: none;
+				line-height: 1;
+			}
+			.reveal h2,
+			.reveal h3,
+			.reveal h4 {
+				text-transform: none;
+			}
+			.reveal ul {
+				margin: 0;
+			}
+			.reveal li {
+				margin-bottom: 0.5em;
+			}
+			.reveal p {
+				margin: 0;
+				margin-bottom: 0.5em;
+			}
+			.reveal em {
+				opacity: 0.6;
+			}
+			.reveal .font-small {
+				font-size: 0.8em;
+			}
+			.w30 {
+				width: 30%;
+				display: inline-block;
+			}
+			p.heading {
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+			p.small {
+				font-size: 0.5em;
+			}
+			p.color-request {
+				font-size: 0.9em;
+			}
+			.text-red {
+				color: #e41a1c;
+			}
+			.text-blue {
+				color: #377eb8;
+			}
+			.text-green {
+				color: #4daf4a;
+			}
+			.text-purple {
+				color: #984ea3;
+			}
+			span.highlight-sky {
+				display: inline-block;
+				padding: 0 0.2em;
+				background-color: rgba(137, 202, 211, 0.5);
+			}
+			span.highlight-burgundy {
+				display: inline-block;
+				padding: 0 0.2em;
+				background-color: rgba(133, 46, 87, 0.3);
+			}
+			.pull-left {
+				text-align: left;
+			}
+
+			.grid_2x2 {
+				height: 100%;
+				display: grid;
+				grid-template-columns: repeat(2, minmax(150px, 2fr));
+				grid-template-rows: repeat(2, minmax(150px, 2fr));
+			}
+
+			.grid-item_2x2 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section style="font-size: 0.8em;">
+					<h1>Using FOIs to get data</h1>
+				</section>
+
+				<section>
+					<ul>
+						<li>Quick FOI recap</li>
+						<li>Why ask for raw data?</li>
+						<li>Step 1: Before you file</li>
+						<li>Step 2: Request language</li>
+						<li>Step 3: The negotiation process</li>
+						<li>You've got the data! Now what?</li>
+						<li>Story examples</li>
+						<li>Questions, etc.</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>
+						<span class="text-red">WHERE</span>
+						<span class="text-blue">WHAT</span>
+						<span class="text-green">WHEN</span>
+						<span class="text-purple">HOW</span>
+					</p>
+					<p class="color-request"><em><span class="text-red">All documents (including but not limited to research, presentations, documents, briefing notes, memos, summaries, communications, reports, etc.)</span> <span class="text-blue">relating to amnesty, pardons, clemency, expungement of records, etc. following the national legalization of cannabis for people who were previously charged or convicted of a cannabis-related crime.</span> <span class="text-green">From Jan. 1, 2015 to present (September 19, 2018).</span> <span class="text-purple">Please provide records as they become available and call me immediately for any clarifications. Exclude media monitoring and cabinet confidences.</span></em></p>
+				</section>
+
+				<section>
+					<p>Why data FOIs?</p>
+				</section>
+
+				<section>
+					<p><strong>Several reasons…</strong></p>
+					<ul>
+						<li>Governments are in the business of running databases.</li>
+						<li>In Canada, we don’t file these very much. U.S. journalists learned long ago that these FOIs work.</li>
+						<li>Data is pliable. Why trust aggregated/summarized data when you can get the raw stuff?</li>
+						<li>These databases often go completely unanalyzed by the agencies that maintain them.</li>
+						<li><strong>These requests are often easier than regular FOIs.</strong></li>
+					</ul>
+				</section>
+
+				<section>
+					<p><strong>Before filing, do your homework</strong></p>
+					<ul>
+						<li>Find out the name of the database (this is key!). It likely has a boring name.</li>
+						<li>Who administers it? Is there any documentation, handbooks or manuals online?</li>
+						<li>Is the structure (column names) for this database listed anywhere? Protip: This is often referred to as the database <strong>“schema.”</strong></li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/schema.png" style="height: 70vh;" alt="">
+				</section>
+
+				<section>
+					<img src="img/form.png" alt="">
+				</section>
+
+				<section>
+					<p><strong>Writing your request</strong></p>
+					<p>The goal here is to get a spreadsheet (.xls, .xlsx, .csv) or database (.sql) file. So we need to be explicit:</p>
+					<p><em>Please provide a machine-readable, itemized (i.e. record-level) export in database or spreadsheet format (i.e. Microsoft Excel, Access, SQL or CSV file format, not .PDF) of <strong>XXXXX</strong> database, going back to when the database was created (OR from Jan. 1, 2018 to present day). Please include a data dictionary for the database, if one exists.</em></p>
+				</section>
+
+				<section>
+					<p>Negotiation</p>
+				</section>
+
+				<section>
+					<ul style="font-size: 0.85em;">
+						<li>Fees. Always challenge them!</li>
+						<li>Privacy</li>
+						<li>Redaction. Remind them that redacting should be as simple as deleting a column.</li>
+						<li>Format (you really, really want a machine-readable spreadsheet)</li>
+						<li>Timing</li>
+						<li>Try to arrange a conference call with the data experts (FOI coordinators almost never know how data works)</li>
+						<li>Always be nice</li>
+						<li>Duty to assist</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>You’ve got the data! Now what?</p>
+				</section>
+
+				<section>
+					<ul>
+						<li>Make sure you understand the data. If you don’t, go back to the FOI officers. What does each row represent?</li>
+						<li>If something seems off, go back to them. Sometimes they make mistakes. Be skeptical!</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/prison.png" alt="">
+				</section>
+
+				<section>
+					<ul>
+						<li>Approach data with humility – check your analysis with someone who knows more than you</li>
+						<li>If there are problems, you want to know before you present to your editor or publish</li>
+						<li>Make sure the claims you are making are backed up by the data</li>
+					</ul>
+				</section>
+
+				<section>
+					<p><strong>Data liberation wins</strong></p>
+					<ul>
+						<li><a href="https://www.cbc.ca/news/canada/warning-signs-intimate-partner-homicide-1.6269761#:~:text=More%20than%20one%20in%20three,January%202015%20and%20June%202020.">Warning signs present in 1 in 3 homicides of intimate partners, CBC investigation finds</a></li>
+						<li><a href="https://www.cbc.ca/news/canada/missing-drugs-pharmacies-part1-1.4708041">More than half a million prescription drugs are stolen each year - and most are opioids (CBC News)</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<p>Data Dictionary for Deadly Relationships</p>
+					<img src="img/datadictionary.png" alt="">
+				</section>
+
+				<section>
+					<p>A few Globe examples…</p>
+					<ul>
+						<li><a href="https://www.theglobeandmail.com/canada/article-why-does-any-canadian-need-a-handgun-what-the-gun-control-debate-is/">Tracing Canada’s crime guns</a></li>
+						<li><a href="https://www.theglobeandmail.com/canada/toronto/article-toronto-ontario-housing-rental-eviction-data-landlords-tenants/">Eviction Factories</a></li>
+						<li><a href="https://www.theglobeandmail.com/canada/article-investigation-racial-bias-in-canadian-prison-risk-assessments/">Bias behind bars</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Questions, discussion, etc.</h3>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+				history: true,
+				plugins: [RevealHighlight]
+			});
+		</script>
+	</body>
+</html>
